@@ -1,0 +1,63 @@
+body
+{
+     height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red , yellow); /* Standard syntax (must be last) */
+
+}
+.container
+{
+	display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+a
+{
+	text-align:right;
+}
+h1
+{
+	font-size: 3em;
+	border-bottom: 2px solid grey;
+	border-right: 2px solid grey;
+	width: 350px;
+	text-align: center;
+	
+	
+	margin-top: 10px;
+	
+
+}
+
+img
+{
+	width: 450px;
+	height: 300px;
+	margin: 10px;
+	transition: all 1s;
+}
+img:hover
+{
+	transform: scale(1.1);
+}
+
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+  
+  .all-browsers > h1, .browser {
+    margin: 10px;
+    padding: 5px;
+  }
+  
+  .browser {
+    background: white;
+  }
+  
+  .browser > h2, p {
+    margin: 4px;
+    font-size: 90%;
+  }
